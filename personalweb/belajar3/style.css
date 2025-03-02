@@ -1,0 +1,251 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box; /* Menambahkan box-sizing untuk mengatur padding dan border */
+}
+
+body {
+    font-family: quicksand;
+    background-color: #ece0e0;
+    margin: 0; /* Menghapus margin default */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ece0e0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #424242;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #a69f9f;
+}
+
+.Home {
+    color:#424242;
+}
+
+.logo {
+    color:#424242;
+    font-size: 30px;
+}
+
+.ABOUT {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.ABOUT h1 {
+    font-size: 100px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #424242;
+}
+
+.ABOUT p {
+    color: #424242;
+    font-size: 30px;
+}
+
+.logsos {
+    width: 80px;
+    height: 80px;
+}
+
+.ABOUT a:hover {
+    box-shadow: none;
+}
+
+.images {
+    width: 45%;
+    height: 82%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 55%;
+    top: 3%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #ece0e0;
+    transition: .5s;
+    object-fit: contain;
+}
+
+.images:hover .boy {
+    box-shadow: none;
+}
+
+.typing {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #424242;
+    width: 6ch;
+    animation: typing 1.5s steps(6, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 5ch; }
+}
+
+@keyframes blink-caret {
+    from, to { border-right-color: transparent; }
+    50% { border-right-color: #424242; }
+}
+
+.section-projects {
+    padding: 100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.Skill-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.h1 {
+    padding: 15px;
+    background-color: transparent;
+    color: #424242;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 3rem;
+}
+
+.Skill-card {
+    background-color: #424242;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.Skill-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Skill-card p {
+    font-size: 20px;
+    padding: 30px;
+    background-color:#ece0e0;
+    color: #424242;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.section-certificate {
+    padding: 100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.certificates {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.certificate {
+    background-color: #424242;
+    width: 700px;
+    height: 700px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.certificate img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.certificate p {
+    font-size: 30px;
+    padding: 30px;
+    background-color: #ece0e0;
+    color: #424242;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #ece0e0;
+    color: #424242;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 21px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS untuk dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #424242;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
